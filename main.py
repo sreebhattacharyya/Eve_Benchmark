@@ -30,7 +30,7 @@ def main():
 
     # for the leftovers of GPT on emotion6
 
-    output_file_name = "/scratch/bbmr/sbhattacharyya1/projects-src/llm-eval/results/" + dataset_name + "_" + model_name + "_" + eval_name 
+    output_file_name = "/path" + dataset_name + "_" + model_name + "_" + eval_name 
     evaluator.store_results(output_file_name)
     
 if __name__ == '__main__': 
