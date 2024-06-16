@@ -1,6 +1,6 @@
 import os 
 
-os.environ["HF_HOME"] = "/scratch/bbmr/sbhattacharyya1/models/"
+os.environ["HF_HOME"] = "path/models/"
 
 import pandas 
 import torch 
@@ -51,13 +51,13 @@ class EvalSetup():
     def get_evaluation_prompt(self): 
 
         if self.eval_protocol == "classification": 
-            file_name = "/scratch/bbmr/sbhattacharyya1/projects-src/llm-eval/prompts/classification_prompt.txt"
+            file_name = "path/prompts/classification_prompt.txt"
         elif self.eval_protocol == "explanation":
-            file_name = "/scratch/bbmr/sbhattacharyya1/projects-src/llm-eval/prompts/explanation_prompt.txt"
+            file_name = "path/prompts/explanation_prompt.txt"
         elif self.eval_protocol == "context-reasoning":
-            file_name = "/scratch/bbmr/sbhattacharyya1/projects-src/llm-eval/prompts/context_prompt.txt"
+            file_name = "path/prompts/context_prompt.txt"
         elif self.eval_protocol == "caption-reasoning":
-            file_name = "/scratch/bbmr/sbhattacharyya1/projects-src/llm-eval/prompts/caption_prompt.txt"
+            file_name = "path/prompts/caption_prompt.txt"
 
         with open(file_name, 'r') as f: 
             prompt = f.read()
