@@ -1,6 +1,6 @@
 import os 
 
-os.environ["HF_HOME"] = "/scratch/bbmr/sbhattacharyya1/models/"
+os.environ["HF_HOME"] = "path/models"
 
 import pandas 
 import torch
@@ -61,9 +61,9 @@ class Dataset():
             6: 'neutral'
         }
 
-        self.annotations_path = "/scratch/bbmr/sbhattacharyya1/projects-src/llm-eval/Emotion6/annotations.csv"
+        self.annotations_path = "path/Emotion6/annotations.csv"
 
-        self.relative_image_path = "/scratch/bbmr/sbhattacharyya1/projects-src/llm-eval/Emotion6/images/"
+        self.relative_image_path = "path/Emotion6/images/"
 
         self.image_path_col = 'file_path'
 
@@ -98,9 +98,9 @@ class Dataset():
         
         # the default benchmark contains only the moderate and difficult samples
         # to additionally evaluate on the easy sample, use 'annotations_easy.csv'
-        self.annotations_path = "/scratch/bbmr/sbhattacharyya1/projects-src/llm-eval/Emo-Set/data/annotations_moderate.csv"
+        self.annotations_path = "path/Emo-Set/data/annotations_moderate.csv"
 
-        self.relative_image_path = "/scratch/bbmr/sbhattacharyya1/projects-src/llm-eval/Emo-Set/data/image/"
+        self.relative_image_path = "path/Emo-Set/data/image/"
         
         self.image_path_col = 'img_id'
 
@@ -132,7 +132,7 @@ class Dataset():
                     7: "sadness"
                 }
         
-        self.annotations_path = "/scratch/bbmr/sbhattacharyya1/projects-src/llm-eval/ArtPhoto/annotations.csv"
+        self.annotations_path = "path/ArtPhoto/annotations.csv"
 
         self.relative_image_path = ""
         
@@ -166,7 +166,7 @@ class Dataset():
                     7: "sad"
                 }
         
-        self.annotations_path = "/scratch/bbmr/sbhattacharyya1/projects-src/llm-eval/Abstract/annotations.csv"
+        self.annotations_path = "path/Abstract/annotations.csv"
 
         self.relative_image_path = ""
         
@@ -201,7 +201,7 @@ class Dataset():
                     7: "sadness"
                 }
         
-        self.annotations_path = "/scratch/bbmr/sbhattacharyya1/projects-src/llm-eval/FI/annotations_hard.csv"
+        self.annotations_path = "path/FI/annotations_hard.csv"
 
         self.relative_image_path = ""
         
