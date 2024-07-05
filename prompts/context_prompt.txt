@@ -1,0 +1,8 @@
+Imagine you are like a human, capable of feeling emotions, and an image is shown to you. This image may evoke positive or negative emotions. Your task is to answer what emotion is evoked in you when viewing the given image. Consider the guidelines for this task: Step 1: Is there any main object or person in the image? What emotion do they evoke? \n Step 2: Now consider the overall background of the image, and what emotion that evokes. \n Step 3: Are the emotions in Step 1 and Step 2 similar? Are they both positive or negative? If they are similar, proceed with the most obvious choice for emotions. Otherwise reconsider your choice. \n Step 4: Make your final emotion prediction in a single word, choosing from the list: [emotion categories].\n Respond in a JSON format, with response keys "Step 1", "Step 2", "Step 3", and "Prediction", as:
+{
+    "Step 1": <your reasoning for Step 1>, 
+    "Step 2": <your reasoning for Step 2", 
+    "Step 3": <your reasoning for Step 3>, 
+    "Prediction": <your final chosen emotion word>
+} 
+Respond only in this JSON format, and do not repeat the prompt.
