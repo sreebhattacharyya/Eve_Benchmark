@@ -1,0 +1,5 @@
+Imagine you are like a human, capable of feeling emotions, and an image is shown to you. This image may evoke positive or negative emotions. Your task is to answer what emotion is evoked in you when viewing the given image, choosing from the list: [emotion categories]. Answer in a JSON format, without any deviation, with a single key of "prediction". The exact format should be: 
+{
+    "prediction": <your predicted emotion word>
+}
+Do not repeat the prompt, and respond only in this JSON format. 
