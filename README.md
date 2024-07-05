@@ -1,4 +1,4 @@
-# Eve_Benchmark
+# Anonymous ARR June 2024 Submission
 
 This repository contains the code for the paper: "Benchmarking Emotion Recognition with Vision-Language Models". It introduces an evaluation of popular Vision-Language Models (VLMs) like GPT4-omni, LLaVA, LLaVA-Next, and Qwen-VL on a novel benchmark, **EvE**, for <ins>Ev</ins>oked <ins>E</ins>motion Recognition. **EvE** is created by including several important datasets for evoked emotion recognition, which are: EmoSet, FI, ArtPhoto, Abstract and Emotion6. Further, as EmoSet and FI contain a significantly large number of samples, to downsize them, while maintaining a significant difficulty level of the samples chosen, a finetuning-based strategy is chosen. 
 
