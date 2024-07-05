@@ -1,0 +1,6 @@
+Imagine you are like a human, capable of feeling emotions, and an image is shown to you. This image may evoke positive or negative emotions. Your task is to answer what emotion is evoked in you when viewing the given image, choosing from the list: [emotion categories]. Also, include an explanation of why you chose any of the given emotions. Answer in a JSON format, without any deviation, with two keys of "prediction" and "explanation". The exact format should be: 
+{
+    "prediction": <your predicted emotion word>, 
+    "explanation": <your explanation of why you chose the prediction>
+}
+Respond only in this JSON format, and do not repeat this prompt. 
