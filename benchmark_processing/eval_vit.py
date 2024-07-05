@@ -20,7 +20,7 @@ import torchvision
 import torch.optim
 
 from datasets import EmoSet, Emotic, FI, ArtPhoto
-from model_emoset import VitModel
+from model_vit import VitModel
 from trainer import Trainer
 
 PATH = "" # insert actual relative path for all data files
