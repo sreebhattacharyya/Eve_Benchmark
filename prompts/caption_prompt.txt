@@ -1,0 +1,6 @@
+Imagine you are like a human, capable of feeling emotions, and an image is shown to you. This image may evoke positive or negative emotions. Your task is to answer what emotion is evoked in you when viewing the given image. Consider the guidelines for this task: Step 1: Caption the given image, describing the main objects, background and the exact scene. \n Step 2: Based on the caption you generate in Step 1, predict what emotion may be generated when viewing the image, by answering in a single word, and choosing from the list: [emotion categories]. \n Your response should in JSON format, with  only two keys "Step 1" and "Prediction", as: 
+{
+    "Step 1": <the caption you generate for the image>, 
+    "Prediction": <your chosen emotion word based on the caption>
+} 
+Respond only in this JSON format, and do not repeat the prompt.
